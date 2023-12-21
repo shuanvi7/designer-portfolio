@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
 import { BaseTypes } from '@/types/BaseTypes'
-import { Header } from '@/components/index'
 import '@/styles/reset.scss'
 import '@/styles/globals.scss'
+import { Header } from '@/components/index'
 
 export const metadata: Metadata = {
   title: 'Designer portoflio',
-  description: 'Designer portfolio website',
+  description: 'Designer Portfolio Website Template for a Personal Brand',
 }
 
 const manrope = Manrope({

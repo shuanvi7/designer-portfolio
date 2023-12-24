@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
-import { BaseTypes } from '@/types/BaseTypes'
+import { IBaseTypes } from '@/types/BaseTypes'
 import '@/styles/reset.scss'
 import '@/styles/globals.scss'
 import { Header } from '@/components/index'
@@ -17,7 +17,7 @@ const manrope = Manrope({
   preload: true,
 })
 
-export default function RootLayout({ children }: BaseTypes) {
+export default function RootLayout({ children }: IBaseTypes) {
   return (
     <html lang="en">
       <body className={ manrope.className }>

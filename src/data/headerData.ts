@@ -1,8 +1,5 @@
 export const data = {
-  header: {
-    logo: 'Jeffery Cannon.',
-    button: 'Book a Call',
-  },
+  logo: 'Jeffery Cannon.',
   nav: [
     {
       text: 'Home',
@@ -21,4 +18,5 @@ export const data = {
       link: '/contacts',
     },
   ],
+  button: 'Book a Call'
 }

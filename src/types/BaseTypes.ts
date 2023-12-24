@@ -1,4 +1,4 @@
-export interface BaseTypes {
+export interface IBaseTypes {
   children: React.ReactNode,
   className?: string
 }

@@ -8,6 +8,7 @@
   "rules": {
     "prettier/prettier": true,
     "indentation": 2,
-    "color-hex-case": "lower"
+    "color-hex-case": "lower",
+    "color-hex-length": "long"
   }
 }

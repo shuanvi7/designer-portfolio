@@ -12,8 +12,9 @@ export function Button({ children, className, theme, ...props }: IButton) {
         styles.button,
         { [styles.iconLeft]: theme === 'iconLeft' },
         { [styles.iconRight]: theme === 'iconRight' },
-        className,
+        className
       ) }
+      { ...props }
     >
       {children}
     </button>

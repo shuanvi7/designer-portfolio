@@ -10,8 +10,10 @@ export function Header() {
       <Container>
         <div className={ styles.wrapper }>
           <Logo text={ data.logo } />
-          <Navigation nav={ data.nav } />
-          <Button>Book a Call</Button>
+          <div className={ styles.actions }>
+            <Navigation nav={ data.nav } />
+            <Button>Book a Call</Button>
+          </div>
         </div>
       </Container>
     </header>

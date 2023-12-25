@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  .link {
+    color: $grey-20;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+
+    &:hover {
+      color: $grey-40;
+    }
+  }
+}

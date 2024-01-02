@@ -4,13 +4,15 @@
   align-items: center;
 
   .link {
+    // padding: 14px 24px;
     color: $grey-20;
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
 
     &:hover {
-      color: $grey-40;
+      background-color: $peach-95;
+      border-radius: 8px;
     }
   }
 }

@@ -18,5 +18,5 @@ export const data = {
       link: '/contacts',
     },
   ],
-  button: 'Book a Call'
+  button: 'Book a Call',
 }

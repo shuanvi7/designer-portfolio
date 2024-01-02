@@ -6,13 +6,13 @@ import { Button } from '@/components/Button/Button'
 
 export function Header() {
   return (
-    <header className={ styles.header }>
+    <header className={styles.header}>
       <Container>
-        <div className={ styles.wrapper }>
-          <Logo text={ data.logo } />
-          <div className={ styles.actions }>
-            <Navigation nav={ data.nav } />
-            <Button>Book a Call</Button>
+        <div className={styles.wrapper}>
+          <Logo text={data.logo} />
+          <div className={styles.actions}>
+            <Navigation nav={data.nav} />
+            <Button theme="icon-left">Book a Call</Button>
           </div>
         </div>
       </Container>

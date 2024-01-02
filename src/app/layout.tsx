@@ -20,11 +20,9 @@ const manrope = Manrope({
 export default function RootLayout({ children }: IBaseTypes) {
   return (
     <html lang="en">
-      <body className={ manrope.className }>
+      <body className={manrope.className}>
         <Header />
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   )

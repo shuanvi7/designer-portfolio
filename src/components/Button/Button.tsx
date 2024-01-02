@@ -2,20 +2,30 @@
 
 import cn from 'classnames'
 import styles from './Button.module.scss'
-import { IButton } from '@/types/Button'
+import Image from 'next/image'
 
-export function Button({ children, className, theme, ...props }: IButton) {
+import { ButtonHTMLAttributes } from 'react'
+
+interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: React.ReactNode
+  theme?: 'icon-left' | 'icon-right'
+}
+
+export function Button({ children, className, theme, type = 'button', ...props }: IButton) {
   return (
     <button
-      type="button"
-      className={ cn(
+      type={type}
+      className={cn(
         styles.button,
-        { [styles.iconLeft]: theme === 'iconLeft' },
-        { [styles.iconRight]: theme === 'iconRight' },
+        { [styles['icon-left']]: theme === 'icon-left' },
+        { [styles['icon-right']]: theme === 'icon-right' },
         className
-      ) }
-      { ...props }
+      )}
+      {...props}
     >
+      {theme === 'icon-left' && (
+        <Image width={24} height={24} src="/images/icons/phone-solid.svg" alt="" />
+      )}
       {children}
     </button>
   )
